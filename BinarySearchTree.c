@@ -2,6 +2,7 @@
 /* author: hxp<hxp201406@gmail.com> */
 #include <stdio.h>
 #include <stdlib.h>
+
 /* Basic structure of the Binary Search Tree */
 struct Node {
     struct Node* p_left_child_node;
