@@ -135,7 +135,7 @@ void printTree(struct Node *p_root_node, int number_of_space)
 int main() {
     struct Node* p_root_node = NULL, *p_given_node, *in_order_successor, *p_minimum_node;
     // Creating a tree
-    printf("Now creating a Binary Search Tree using code from Problem 2.3\n");
+    printf("\nNow creating a Binary Search Tree using code from Problem 2.3\n");
     p_root_node = insertNewNodeNoRecursion(p_root_node, 10);
     p_root_node = insertNewNodeNoRecursion(p_root_node, 17);
     p_root_node = insertNewNodeNoRecursion(p_root_node, 4);
@@ -146,11 +146,11 @@ int main() {
     printf("Created Binary Search Tree:\n");
     printTree(p_root_node, 0);
     // Find the node which has the minimum key
-    printf("Now performing: Problem 2.1\n");
+    printf("\nNow performing: Problem 2.1\n");
     p_minimum_node = findMinValue(p_root_node);
-    printf("The minimum key in the tree is: %d", p_minimum_node->node_key);
+    printf("The minimum key in the tree is: %d\n", p_minimum_node->node_key);
     // Appoint a node and find its in-order successor
-    printf("Now performing: Problem 2.2\n");
+    printf("\nNow performing: Problem 2.2\n");
     p_given_node=p_root_node->p_left_child_node->p_left_child_node;
     in_order_successor = findInOrderSuccessor(p_given_node);
     if(in_order_successor != NULL)
@@ -165,7 +165,7 @@ int main() {
     else
         printf("In-order Successor of %d doesn't exist\n", p_given_node->node_key);
     // Insert a key to the tree
-    printf("Now performing: Problem 2.4\n");
+    printf("\nNow performing: Problem 2.4\n");
     unsigned short key_to_insert;
     key_to_insert = 6;
     printf("Inserting %d into the tree...\n", key_to_insert);
